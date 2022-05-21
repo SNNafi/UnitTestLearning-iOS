@@ -14,6 +14,13 @@
 		C76C592728391CCB00587555 /* AppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592628391CCB00587555 /* AppLaunchTests.swift */; };
 		C76C592928391D9D00587555 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592828391D9D00587555 /* TestingAppDelegate.swift */; };
 		C76C592B28391E2D00587555 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592A28391E2D00587555 /* main.swift */; };
+		C76C592E2839367E00587555 /* StoryboardBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592D2839367E00587555 /* StoryboardBasedViewController.swift */; };
+		C76C59312839376300587555 /* LoadViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C59302839376300587555 /* LoadViewControllersTests.swift */; };
+		C76C5934283938B700587555 /* XIBBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C5932283938B700587555 /* XIBBasedViewController.swift */; };
+		C76C5935283938B700587555 /* XIBBasedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76C5933283938B700587555 /* XIBBasedViewController.xib */; };
+		C76C59372839395300587555 /* XIBBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C59362839395200587555 /* XIBBasedViewControllerTests.swift */; };
+		C76C593928393A3A00587555 /* CodeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C593828393A3A00587555 /* CodeBasedViewController.swift */; };
+		C76C593B28393B1000587555 /* CodeBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C593A28393B1000587555 /* CodeBasedViewControllerTests.swift */; };
 		C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B5282FB085005917DC /* AppDelegate.swift */; };
 		C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B7282FB085005917DC /* SceneDelegate.swift */; };
 		C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B9282FB085005917DC /* ViewController.swift */; };
@@ -50,6 +57,13 @@
 		C76C592628391CCB00587555 /* AppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchTests.swift; sourceTree = "<group>"; };
 		C76C592828391D9D00587555 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		C76C592A28391E2D00587555 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C76C592D2839367E00587555 /* StoryboardBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewController.swift; sourceTree = "<group>"; };
+		C76C59302839376300587555 /* LoadViewControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewControllersTests.swift; sourceTree = "<group>"; };
+		C76C5932283938B700587555 /* XIBBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewController.swift; sourceTree = "<group>"; };
+		C76C5933283938B700587555 /* XIBBasedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBBasedViewController.xib; sourceTree = "<group>"; };
+		C76C59362839395200587555 /* XIBBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewControllerTests.swift; sourceTree = "<group>"; };
+		C76C593828393A3A00587555 /* CodeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewController.swift; sourceTree = "<group>"; };
+		C76C593A28393B1000587555 /* CodeBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewControllerTests.swift; sourceTree = "<group>"; };
 		C7E7D8B2282FB085005917DC /* TestingPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E7D8B5282FB085005917DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E7D8B7282FB085005917DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +151,25 @@
 			path = AppLaunch;
 			sourceTree = "<group>";
 		};
+		C76C592C2839366C00587555 /* Chapter5 */ = {
+			isa = PBXGroup;
+			children = (
+				C76C592F2839375700587555 /* LoadViewControllers */,
+			);
+			path = Chapter5;
+			sourceTree = "<group>";
+		};
+		C76C592F2839375700587555 /* LoadViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C76C592D2839367E00587555 /* StoryboardBasedViewController.swift */,
+				C76C5932283938B700587555 /* XIBBasedViewController.swift */,
+				C76C5933283938B700587555 /* XIBBasedViewController.xib */,
+				C76C593828393A3A00587555 /* CodeBasedViewController.swift */,
+			);
+			path = LoadViewControllers;
+			sourceTree = "<group>";
+		};
 		C7E7D8A9282FB085005917DC = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +193,7 @@
 		C7E7D8B4282FB085005917DC /* TestingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C76C592C2839366C00587555 /* Chapter5 */,
 				C76C592228391C9300587555 /* Chapter4 */,
 				C7211D7E2838EC2C00A17A1B /* Chapter3 */,
 				C7211D76283813A900A17A1B /* Chapter2 */,
@@ -183,6 +217,9 @@
 				C7211D822838ECA600A17A1B /* CoveredClassTests.swift */,
 				C76C592628391CCB00587555 /* AppLaunchTests.swift */,
 				C76C592828391D9D00587555 /* TestingAppDelegate.swift */,
+				C76C59302839376300587555 /* LoadViewControllersTests.swift */,
+				C76C59362839395200587555 /* XIBBasedViewControllerTests.swift */,
+				C76C593A28393B1000587555 /* CodeBasedViewControllerTests.swift */,
 			);
 			path = TestingPlaygroundTests;
 			sourceTree = "<group>";
@@ -300,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76C5935283938B700587555 /* XIBBasedViewController.xib in Resources */,
 				C7E7D8C2282FB08A005917DC /* LaunchScreen.storyboard in Resources */,
 				C7E7D8BF282FB08A005917DC /* Assets.xcassets in Resources */,
 				C7E7D8BD282FB085005917DC /* Main.storyboard in Resources */,
@@ -327,11 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76C5934283938B700587555 /* XIBBasedViewController.swift in Sources */,
 				C7211D79283813C600A17A1B /* MyClass.swift in Sources */,
 				C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */,
 				C76C592B28391E2D00587555 /* main.swift in Sources */,
+				C76C593928393A3A00587555 /* CodeBasedViewController.swift in Sources */,
 				C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */,
 				C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */,
+				C76C592E2839367E00587555 /* StoryboardBasedViewController.swift in Sources */,
 				C7211D812838EC4600A17A1B /* CoveredClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +385,10 @@
 				C7211D7D2838147900A17A1B /* MyClassTests.swift in Sources */,
 				C7E7D8CD282FB08A005917DC /* TestingPlaygroundTests.swift in Sources */,
 				C76C592728391CCB00587555 /* AppLaunchTests.swift in Sources */,
+				C76C59312839376300587555 /* LoadViewControllersTests.swift in Sources */,
+				C76C593B28393B1000587555 /* CodeBasedViewControllerTests.swift in Sources */,
 				C7211D832838ECA600A17A1B /* CoveredClassTests.swift in Sources */,
+				C76C59372839395300587555 /* XIBBasedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
