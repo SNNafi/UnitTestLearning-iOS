@@ -39,6 +39,9 @@
 		C76C59632839638200587555 /* OutletConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C59612839638200587555 /* OutletConnectionsViewController.swift */; };
 		C76C59642839638200587555 /* OutletConnectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76C59622839638200587555 /* OutletConnectionsViewController.xib */; };
 		C76C59662839651D00587555 /* OutletConnectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C59652839651D00587555 /* OutletConnectionsViewControllerTests.swift */; };
+		C76C596A2839678700587555 /* ButtonTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C59692839678700587555 /* ButtonTapViewController.swift */; };
+		C76C596F283968DE00587555 /* ButtonTapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C596E283968DE00587555 /* ButtonTapViewControllerTests.swift */; };
+		C76C5971283969CD00587555 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C5970283969CC00587555 /* TestHelpers.swift */; };
 		C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B5282FB085005917DC /* AppDelegate.swift */; };
 		C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B7282FB085005917DC /* SceneDelegate.swift */; };
 		C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B9282FB085005917DC /* ViewController.swift */; };
@@ -100,6 +103,9 @@
 		C76C59612839638200587555 /* OutletConnectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletConnectionsViewController.swift; sourceTree = "<group>"; };
 		C76C59622839638200587555 /* OutletConnectionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutletConnectionsViewController.xib; sourceTree = "<group>"; };
 		C76C59652839651D00587555 /* OutletConnectionsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletConnectionsViewControllerTests.swift; sourceTree = "<group>"; };
+		C76C59692839678700587555 /* ButtonTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapViewController.swift; sourceTree = "<group>"; };
+		C76C596E283968DE00587555 /* ButtonTapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapViewControllerTests.swift; sourceTree = "<group>"; };
+		C76C5970283969CC00587555 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		C7E7D8B2282FB085005917DC /* TestingPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E7D8B5282FB085005917DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E7D8B7282FB085005917DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -276,6 +282,30 @@
 			path = Chapter7;
 			sourceTree = "<group>";
 		};
+		C76C59672839676100587555 /* Chapter8 */ = {
+			isa = PBXGroup;
+			children = (
+				C76C59682839676A00587555 /* ButtonTap */,
+			);
+			path = Chapter8;
+			sourceTree = "<group>";
+		};
+		C76C59682839676A00587555 /* ButtonTap */ = {
+			isa = PBXGroup;
+			children = (
+				C76C59692839678700587555 /* ButtonTapViewController.swift */,
+			);
+			path = ButtonTap;
+			sourceTree = "<group>";
+		};
+		C76C596B283968B000587555 /* Chapter8 */ = {
+			isa = PBXGroup;
+			children = (
+				C76C596E283968DE00587555 /* ButtonTapViewControllerTests.swift */,
+			);
+			path = Chapter8;
+			sourceTree = "<group>";
+		};
 		C7E7D8A9282FB085005917DC = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +329,7 @@
 		C7E7D8B4282FB085005917DC /* TestingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C76C59672839676100587555 /* Chapter8 */,
 				C76C595E2839633F00587555 /* Chapter7 */,
 				C76C593C28394DF900587555 /* Chapter6 */,
 				C76C592C2839366C00587555 /* Chapter5 */,
@@ -320,6 +351,7 @@
 		C7E7D8CB282FB08A005917DC /* TestingPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				C76C596B283968B000587555 /* Chapter8 */,
 				C76C59602839635B00587555 /* Chapter7 */,
 				C76C59512839545300587555 /* Chapter6 */,
 				C7E7D8CC282FB08A005917DC /* TestingPlaygroundTests.swift */,
@@ -330,6 +362,7 @@
 				C76C59302839376300587555 /* LoadViewControllersTests.swift */,
 				C76C59362839395200587555 /* XIBBasedViewControllerTests.swift */,
 				C76C593A28393B1000587555 /* CodeBasedViewControllerTests.swift */,
+				C76C5970283969CC00587555 /* TestHelpers.swift */,
 			);
 			path = TestingPlaygroundTests;
 			sourceTree = "<group>";
@@ -488,6 +521,7 @@
 				C76C592B28391E2D00587555 /* main.swift in Sources */,
 				C76C593928393A3A00587555 /* CodeBasedViewController.swift in Sources */,
 				C76C594B2839503D00587555 /* InstanceInitializerViewController.swift in Sources */,
+				C76C596A2839678700587555 /* ButtonTapViewController.swift in Sources */,
 				C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */,
 				C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */,
 				C76C594328394F5500587555 /* InstancePropertyViewController.swift in Sources */,
@@ -502,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76C596F283968DE00587555 /* ButtonTapViewControllerTests.swift in Sources */,
 				C76C592928391D9D00587555 /* TestingAppDelegate.swift in Sources */,
 				C76C59532839546200587555 /* MySingletonViewControllerTests.swift in Sources */,
 				C76C595B28395F9B00587555 /* ClosureInitializerViewControllerTests.swift in Sources */,
@@ -512,6 +547,7 @@
 				C76C595D283960E200587555 /* ClosurePropertyViewControllerTests.swift in Sources */,
 				C76C59312839376300587555 /* LoadViewControllersTests.swift in Sources */,
 				C76C59662839651D00587555 /* OutletConnectionsViewControllerTests.swift in Sources */,
+				C76C5971283969CD00587555 /* TestHelpers.swift in Sources */,
 				C76C595528395B5C00587555 /* OverrideViewControllerTests.swift in Sources */,
 				C76C593B28393B1000587555 /* CodeBasedViewControllerTests.swift in Sources */,
 				C76C595728395D2900587555 /* InstanceInitializerViewControllerTests.swift in Sources */,
