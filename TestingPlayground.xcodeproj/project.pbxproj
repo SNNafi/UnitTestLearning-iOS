@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C7211D79283813C600A17A1B /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7211D78283813C600A17A1B /* MyClass.swift */; };
 		C7211D7D2838147900A17A1B /* MyClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7211D7C2838147900A17A1B /* MyClassTests.swift */; };
+		C7211D812838EC4600A17A1B /* CoveredClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7211D802838EC4600A17A1B /* CoveredClass.swift */; };
+		C7211D832838ECA600A17A1B /* CoveredClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7211D822838ECA600A17A1B /* CoveredClassTests.swift */; };
 		C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B5282FB085005917DC /* AppDelegate.swift */; };
 		C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B7282FB085005917DC /* SceneDelegate.swift */; };
 		C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B9282FB085005917DC /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		C7211D78283813C600A17A1B /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		C7211D7C2838147900A17A1B /* MyClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTests.swift; sourceTree = "<group>"; };
+		C7211D802838EC4600A17A1B /* CoveredClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClass.swift; sourceTree = "<group>"; };
+		C7211D822838ECA600A17A1B /* CoveredClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClassTests.swift; sourceTree = "<group>"; };
 		C7E7D8B2282FB085005917DC /* TestingPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E7D8B5282FB085005917DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E7D8B7282FB085005917DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,22 @@
 			path = LifeCycle;
 			sourceTree = "<group>";
 		};
+		C7211D7E2838EC2C00A17A1B /* Chapter3 */ = {
+			isa = PBXGroup;
+			children = (
+				C7211D7F2838EC3300A17A1B /* CodeCoverage */,
+			);
+			path = Chapter3;
+			sourceTree = "<group>";
+		};
+		C7211D7F2838EC3300A17A1B /* CodeCoverage */ = {
+			isa = PBXGroup;
+			children = (
+				C7211D802838EC4600A17A1B /* CoveredClass.swift */,
+			);
+			path = CodeCoverage;
+			sourceTree = "<group>";
+		};
 		C7E7D8A9282FB085005917DC = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +139,7 @@
 		C7E7D8B4282FB085005917DC /* TestingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C7211D7E2838EC2C00A17A1B /* Chapter3 */,
 				C7211D76283813A900A17A1B /* Chapter2 */,
 				C7E7D8B5282FB085005917DC /* AppDelegate.swift */,
 				C7E7D8B7282FB085005917DC /* SceneDelegate.swift */,
@@ -136,6 +157,7 @@
 			children = (
 				C7E7D8CC282FB08A005917DC /* TestingPlaygroundTests.swift */,
 				C7211D7C2838147900A17A1B /* MyClassTests.swift */,
+				C7211D822838ECA600A17A1B /* CoveredClassTests.swift */,
 			);
 			path = TestingPlaygroundTests;
 			sourceTree = "<group>";
@@ -284,6 +306,7 @@
 				C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */,
 				C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */,
 				C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */,
+				C7211D812838EC4600A17A1B /* CoveredClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +316,7 @@
 			files = (
 				C7211D7D2838147900A17A1B /* MyClassTests.swift in Sources */,
 				C7E7D8CD282FB08A005917DC /* TestingPlaygroundTests.swift in Sources */,
+				C7211D832838ECA600A17A1B /* CoveredClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
