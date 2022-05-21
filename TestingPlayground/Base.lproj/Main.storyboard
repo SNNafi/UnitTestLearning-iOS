@@ -46,7 +46,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="mFH-Jv-zMn" id="cQT-9X-2eV"/>
+                        <outlet property="label" destination="mFH-Jv-zMn" id="iSg-1k-iY4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4CK-jW-15c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
