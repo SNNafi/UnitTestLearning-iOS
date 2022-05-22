@@ -11,6 +11,10 @@
 		C7211D7D2838147900A17A1B /* MyClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7211D7C2838147900A17A1B /* MyClassTests.swift */; };
 		C7211D812838EC4600A17A1B /* CoveredClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7211D802838EC4600A17A1B /* CoveredClass.swift */; };
 		C7211D832838ECA600A17A1B /* CoveredClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7211D822838ECA600A17A1B /* CoveredClassTests.swift */; };
+		C72CB7A3283AB6020047D1B9 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CB7A2283AB6020047D1B9 /* AlertViewController.swift */; };
+		C72CB7A6283AB8780047D1B9 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72CB7A4283AB8660047D1B9 /* ViewControllerPresentationSpy.xcframework */; };
+		C72CB7A8283AB8BB0047D1B9 /* ViewControllerPresentationSpy.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C72CB7A4283AB8660047D1B9 /* ViewControllerPresentationSpy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C72CB7AB283AB9280047D1B9 /* AlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CB7AA283AB9280047D1B9 /* AlertViewControllerTests.swift */; };
 		C76C592728391CCB00587555 /* AppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592628391CCB00587555 /* AppLaunchTests.swift */; };
 		C76C592928391D9D00587555 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592828391D9D00587555 /* TestingAppDelegate.swift */; };
 		C76C592B28391E2D00587555 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592A28391E2D00587555 /* main.swift */; };
@@ -70,11 +74,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C72CB7A7283AB8970047D1B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				C72CB7A8283AB8BB0047D1B9 /* ViewControllerPresentationSpy.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C7211D78283813C600A17A1B /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		C7211D7C2838147900A17A1B /* MyClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTests.swift; sourceTree = "<group>"; };
 		C7211D802838EC4600A17A1B /* CoveredClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClass.swift; sourceTree = "<group>"; };
 		C7211D822838ECA600A17A1B /* CoveredClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClassTests.swift; sourceTree = "<group>"; };
+		C72CB7A2283AB6020047D1B9 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		C72CB7A4283AB8660047D1B9 /* ViewControllerPresentationSpy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ViewControllerPresentationSpy.xcframework; sourceTree = "<group>"; };
+		C72CB7AA283AB9280047D1B9 /* AlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerTests.swift; sourceTree = "<group>"; };
 		C76C592628391CCB00587555 /* AppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchTests.swift; sourceTree = "<group>"; };
 		C76C592828391D9D00587555 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		C76C592A28391E2D00587555 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -133,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72CB7A6283AB8780047D1B9 /* ViewControllerPresentationSpy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +197,31 @@
 				C7211D802838EC4600A17A1B /* CoveredClass.swift */,
 			);
 			path = CodeCoverage;
+			sourceTree = "<group>";
+		};
+		C72CB7A0283AB5DF0047D1B9 /* Chapter9 */ = {
+			isa = PBXGroup;
+			children = (
+				C72CB7A4283AB8660047D1B9 /* ViewControllerPresentationSpy.xcframework */,
+				C72CB7A1283AB5E60047D1B9 /* Alert */,
+			);
+			path = Chapter9;
+			sourceTree = "<group>";
+		};
+		C72CB7A1283AB5E60047D1B9 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C72CB7A2283AB6020047D1B9 /* AlertViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		C72CB7A9283AB9130047D1B9 /* Chapter9 */ = {
+			isa = PBXGroup;
+			children = (
+				C72CB7AA283AB9280047D1B9 /* AlertViewControllerTests.swift */,
+			);
+			path = Chapter9;
 			sourceTree = "<group>";
 		};
 		C76C592228391C9300587555 /* Chapter4 */ = {
@@ -329,6 +375,7 @@
 		C7E7D8B4282FB085005917DC /* TestingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C72CB7A0283AB5DF0047D1B9 /* Chapter9 */,
 				C76C59672839676100587555 /* Chapter8 */,
 				C76C595E2839633F00587555 /* Chapter7 */,
 				C76C593C28394DF900587555 /* Chapter6 */,
@@ -351,6 +398,7 @@
 		C7E7D8CB282FB08A005917DC /* TestingPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				C72CB7A9283AB9130047D1B9 /* Chapter9 */,
 				C76C596B283968B000587555 /* Chapter8 */,
 				C76C59602839635B00587555 /* Chapter7 */,
 				C76C59512839545300587555 /* Chapter6 */,
@@ -403,6 +451,7 @@
 				C7E7D8C4282FB08A005917DC /* Sources */,
 				C7E7D8C5282FB08A005917DC /* Frameworks */,
 				C7E7D8C6282FB08A005917DC /* Resources */,
+				C72CB7A7283AB8970047D1B9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -513,6 +562,7 @@
 				C76C5934283938B700587555 /* XIBBasedViewController.swift in Sources */,
 				C76C594D2839504B00587555 /* ClosureInitializerViewController.swift in Sources */,
 				C76C594528394FCC00587555 /* ClosurePropertyViewController.swift in Sources */,
+				C72CB7A3283AB6020047D1B9 /* AlertViewController.swift in Sources */,
 				C76C594F2839505700587555 /* MySingletonViewController.swift in Sources */,
 				C7211D79283813C600A17A1B /* MyClass.swift in Sources */,
 				C76C59632839638200587555 /* OutletConnectionsViewController.swift in Sources */,
@@ -553,6 +603,7 @@
 				C76C595728395D2900587555 /* InstanceInitializerViewControllerTests.swift in Sources */,
 				C7211D832838ECA600A17A1B /* CoveredClassTests.swift in Sources */,
 				C76C59372839395300587555 /* XIBBasedViewControllerTests.swift in Sources */,
+				C72CB7AB283AB9280047D1B9 /* AlertViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
