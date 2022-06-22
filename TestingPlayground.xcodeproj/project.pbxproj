@@ -16,6 +16,9 @@
 		C72CB7A6283AB8780047D1B9 /* ViewControllerPresentationSpy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72CB7A4283AB8660047D1B9 /* ViewControllerPresentationSpy.xcframework */; };
 		C72CB7A8283AB8BB0047D1B9 /* ViewControllerPresentationSpy.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C72CB7A4283AB8660047D1B9 /* ViewControllerPresentationSpy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C72CB7AB283AB9280047D1B9 /* AlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CB7AA283AB9280047D1B9 /* AlertViewControllerTests.swift */; };
+		C733ACD9286394E8004B8608 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C733ACD8286394E7004B8608 /* UserDefaultsViewController.swift */; };
+		C733ACDE286398E7004B8608 /* FakeUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C733ACDD286398E0004B8608 /* FakeUserDefaults.swift */; };
+		C733ACE02863996E004B8608 /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C733ACDF2863996E004B8608 /* UserDefaultsTests.swift */; };
 		C76C592728391CCB00587555 /* AppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592628391CCB00587555 /* AppLaunchTests.swift */; };
 		C76C592928391D9D00587555 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592828391D9D00587555 /* TestingAppDelegate.swift */; };
 		C76C592B28391E2D00587555 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C592A28391E2D00587555 /* main.swift */; };
@@ -101,6 +104,9 @@
 		C72CB7A2283AB6020047D1B9 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		C72CB7A4283AB8660047D1B9 /* ViewControllerPresentationSpy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ViewControllerPresentationSpy.xcframework; sourceTree = "<group>"; };
 		C72CB7AA283AB9280047D1B9 /* AlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerTests.swift; sourceTree = "<group>"; };
+		C733ACD8286394E7004B8608 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		C733ACDD286398E0004B8608 /* FakeUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeUserDefaults.swift; sourceTree = "<group>"; };
+		C733ACDF2863996E004B8608 /* UserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTests.swift; sourceTree = "<group>"; };
 		C76C592628391CCB00587555 /* AppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchTests.swift; sourceTree = "<group>"; };
 		C76C592828391D9D00587555 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		C76C592A28391E2D00587555 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -232,6 +238,31 @@
 				C72CB7AA283AB9280047D1B9 /* AlertViewControllerTests.swift */,
 			);
 			path = Chapter9;
+			sourceTree = "<group>";
+		};
+		C733ACD62863947B004B8608 /* Chapter11 */ = {
+			isa = PBXGroup;
+			children = (
+				C733ACD7286394C6004B8608 /* UserDefaults */,
+			);
+			path = Chapter11;
+			sourceTree = "<group>";
+		};
+		C733ACD7286394C6004B8608 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				C733ACD8286394E7004B8608 /* UserDefaultsViewController.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		C733ACDC286398D5004B8608 /* Chapter11 */ = {
+			isa = PBXGroup;
+			children = (
+				C733ACDD286398E0004B8608 /* FakeUserDefaults.swift */,
+				C733ACDF2863996E004B8608 /* UserDefaultsTests.swift */,
+			);
+			path = Chapter11;
 			sourceTree = "<group>";
 		};
 		C76C592228391C9300587555 /* Chapter4 */ = {
@@ -404,6 +435,7 @@
 		C7E7D8B4282FB085005917DC /* TestingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C733ACD62863947B004B8608 /* Chapter11 */,
 				C78F1B60286211E1005D4DC1 /* Chapter10 */,
 				C72CB7A0283AB5DF0047D1B9 /* Chapter9 */,
 				C76C59672839676100587555 /* Chapter8 */,
@@ -428,6 +460,7 @@
 		C7E7D8CB282FB08A005917DC /* TestingPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				C733ACDC286398D5004B8608 /* Chapter11 */,
 				C78F1B672862181C005D4DC1 /* Chapter10 */,
 				C72CB7A9283AB9130047D1B9 /* Chapter9 */,
 				C76C596B283968B000587555 /* Chapter8 */,
@@ -601,6 +634,7 @@
 				C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */,
 				C76C594828394FFD00587555 /* OverrideViewController.swift in Sources */,
 				C76C592B28391E2D00587555 /* main.swift in Sources */,
+				C733ACD9286394E8004B8608 /* UserDefaultsViewController.swift in Sources */,
 				C78F1B622862130D005D4DC1 /* NavPushViewController.swift in Sources */,
 				C76C593928393A3A00587555 /* CodeBasedViewController.swift in Sources */,
 				C76C594B2839503D00587555 /* InstanceInitializerViewController.swift in Sources */,
@@ -636,6 +670,8 @@
 				C76C5971283969CD00587555 /* TestHelpers.swift in Sources */,
 				C76C595528395B5C00587555 /* OverrideViewControllerTests.swift in Sources */,
 				C76C593B28393B1000587555 /* CodeBasedViewControllerTests.swift in Sources */,
+				C733ACE02863996E004B8608 /* UserDefaultsTests.swift in Sources */,
+				C733ACDE286398E7004B8608 /* FakeUserDefaults.swift in Sources */,
 				C76C595728395D2900587555 /* InstanceInitializerViewControllerTests.swift in Sources */,
 				C7211D832838ECA600A17A1B /* CoveredClassTests.swift in Sources */,
 				C76C59372839395300587555 /* XIBBasedViewControllerTests.swift in Sources */,

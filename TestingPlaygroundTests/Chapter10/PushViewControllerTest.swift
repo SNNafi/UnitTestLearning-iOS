@@ -10,7 +10,7 @@ final class PushViewControllerTest: XCTestCase {
     
     override func setUp() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        sut = sb.instantiateViewController(identifier: String(describing: NavPushViewController.self)) as! NavPushViewController
+        sut = sb.instantiateViewController(identifier: String(describing: NavPushViewController.self)) as? NavPushViewController
         sut.loadViewIfNeeded()
         super.setUp()
     }
