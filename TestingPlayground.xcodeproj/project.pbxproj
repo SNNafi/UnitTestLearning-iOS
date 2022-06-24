@@ -63,6 +63,8 @@
 		C7AD124F2866395300781660 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD124E2866395300781660 /* TestError.swift */; };
 		C7AD12532866422300781660 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD12522866422300781660 /* TextFieldViewController.swift */; };
 		C7AD12562866567000781660 /* TextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD12552866567000781660 /* TextFieldTests.swift */; };
+		C7AD125A28665FEB00781660 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD125928665FEB00781660 /* TableViewController.swift */; };
+		C7AD125D2866614E00781660 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD125C2866614E00781660 /* TableViewTests.swift */; };
 		C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B5282FB085005917DC /* AppDelegate.swift */; };
 		C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B7282FB085005917DC /* SceneDelegate.swift */; };
 		C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B9282FB085005917DC /* ViewController.swift */; };
@@ -160,6 +162,8 @@
 		C7AD124E2866395300781660 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		C7AD12522866422300781660 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		C7AD12552866567000781660 /* TextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTests.swift; sourceTree = "<group>"; };
+		C7AD125928665FEB00781660 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C7AD125C2866614E00781660 /* TableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTests.swift; sourceTree = "<group>"; };
 		C7E7D8B2282FB085005917DC /* TestingPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E7D8B5282FB085005917DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E7D8B7282FB085005917DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -505,6 +509,30 @@
 			path = Chapter14;
 			sourceTree = "<group>";
 		};
+		C7AD125728665FC800781660 /* Chapter15 */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD125828665FD400781660 /* TableView */,
+			);
+			path = Chapter15;
+			sourceTree = "<group>";
+		};
+		C7AD125828665FD400781660 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD125928665FEB00781660 /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		C7AD125B2866613C00781660 /* Chapter15 */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD125C2866614E00781660 /* TableViewTests.swift */,
+			);
+			path = Chapter15;
+			sourceTree = "<group>";
+		};
 		C7E7D8A9282FB085005917DC = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +556,7 @@
 		C7E7D8B4282FB085005917DC /* TestingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C7AD125728665FC800781660 /* Chapter15 */,
 				C7AD12502866420300781660 /* Chapter14 */,
 				C7AD12452865D05D00781660 /* Chapter13 */,
 				C7AD123B2865C20700781660 /* Chapter12 */,
@@ -556,6 +585,7 @@
 		C7E7D8CB282FB08A005917DC /* TestingPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				C7AD125B2866613C00781660 /* Chapter15 */,
 				C7AD12542866565A00781660 /* Chapter14 */,
 				C7AD12492865DB4A00781660 /* Chapter13 */,
 				C7AD12412865C47C00781660 /* Chapter12 */,
@@ -731,6 +761,7 @@
 				C7211D79283813C600A17A1B /* MyClass.swift in Sources */,
 				C76C59632839638200587555 /* OutletConnectionsViewController.swift in Sources */,
 				C7AD12482865D09000781660 /* C13NetworkTestViewController.swift in Sources */,
+				C7AD125A28665FEB00781660 /* TableViewController.swift in Sources */,
 				C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */,
 				C76C594828394FFD00587555 /* OverrideViewController.swift in Sources */,
 				C76C592B28391E2D00587555 /* main.swift in Sources */,
@@ -782,6 +813,7 @@
 				C76C595728395D2900587555 /* InstanceInitializerViewControllerTests.swift in Sources */,
 				C7AD12562866567000781660 /* TextFieldTests.swift in Sources */,
 				C7211D832838ECA600A17A1B /* CoveredClassTests.swift in Sources */,
+				C7AD125D2866614E00781660 /* TableViewTests.swift in Sources */,
 				C76C59372839395300587555 /* XIBBasedViewControllerTests.swift in Sources */,
 				C72CB7AB283AB9280047D1B9 /* AlertViewControllerTests.swift in Sources */,
 			);
