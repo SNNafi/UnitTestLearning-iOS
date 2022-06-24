@@ -54,6 +54,9 @@
 		C78F1B64286213FA005D4DC1 /* CodeNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F1B63286213FA005D4DC1 /* CodeNextViewController.swift */; };
 		C78F1B66286215BA005D4DC1 /* SegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F1B65286215BA005D4DC1 /* SegueNextViewController.swift */; };
 		C78F1B6928621836005D4DC1 /* PushViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F1B6828621836005D4DC1 /* PushViewControllerTest.swift */; };
+		C7AD123E2865C23600781660 /* NetworkTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD123D2865C23600781660 /* NetworkTestViewController.swift */; };
+		C7AD12422865C48A00781660 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD123F2865C47000781660 /* MockURLSession.swift */; };
+		C7AD12442865C56F00781660 /* C12NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD12432865C56F00781660 /* C12NetworkTests.swift */; };
 		C7E7D8B6282FB085005917DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B5282FB085005917DC /* AppDelegate.swift */; };
 		C7E7D8B8282FB085005917DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B7282FB085005917DC /* SceneDelegate.swift */; };
 		C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7D8B9282FB085005917DC /* ViewController.swift */; };
@@ -142,6 +145,9 @@
 		C78F1B63286213FA005D4DC1 /* CodeNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeNextViewController.swift; sourceTree = "<group>"; };
 		C78F1B65286215BA005D4DC1 /* SegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueNextViewController.swift; sourceTree = "<group>"; };
 		C78F1B6828621836005D4DC1 /* PushViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewControllerTest.swift; sourceTree = "<group>"; };
+		C7AD123D2865C23600781660 /* NetworkTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestViewController.swift; sourceTree = "<group>"; };
+		C7AD123F2865C47000781660 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		C7AD12432865C56F00781660 /* C12NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C12NetworkTests.swift; sourceTree = "<group>"; };
 		C7E7D8B2282FB085005917DC /* TestingPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E7D8B5282FB085005917DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E7D8B7282FB085005917DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -412,6 +418,31 @@
 			path = Chapter10;
 			sourceTree = "<group>";
 		};
+		C7AD123B2865C20700781660 /* Chapter12 */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD123C2865C21700781660 /* NetworkRequest */,
+			);
+			path = Chapter12;
+			sourceTree = "<group>";
+		};
+		C7AD123C2865C21700781660 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD123D2865C23600781660 /* NetworkTestViewController.swift */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		C7AD12412865C47C00781660 /* Chapter12 */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD123F2865C47000781660 /* MockURLSession.swift */,
+				C7AD12432865C56F00781660 /* C12NetworkTests.swift */,
+			);
+			path = Chapter12;
+			sourceTree = "<group>";
+		};
 		C7E7D8A9282FB085005917DC = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +466,7 @@
 		C7E7D8B4282FB085005917DC /* TestingPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				C7AD123B2865C20700781660 /* Chapter12 */,
 				C733ACD62863947B004B8608 /* Chapter11 */,
 				C78F1B60286211E1005D4DC1 /* Chapter10 */,
 				C72CB7A0283AB5DF0047D1B9 /* Chapter9 */,
@@ -460,6 +492,7 @@
 		C7E7D8CB282FB08A005917DC /* TestingPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				C7AD12412865C47C00781660 /* Chapter12 */,
 				C733ACDC286398D5004B8608 /* Chapter11 */,
 				C78F1B672862181C005D4DC1 /* Chapter10 */,
 				C72CB7A9283AB9130047D1B9 /* Chapter9 */,
@@ -634,6 +667,7 @@
 				C7E7D8BA282FB085005917DC /* ViewController.swift in Sources */,
 				C76C594828394FFD00587555 /* OverrideViewController.swift in Sources */,
 				C76C592B28391E2D00587555 /* main.swift in Sources */,
+				C7AD123E2865C23600781660 /* NetworkTestViewController.swift in Sources */,
 				C733ACD9286394E8004B8608 /* UserDefaultsViewController.swift in Sources */,
 				C78F1B622862130D005D4DC1 /* NavPushViewController.swift in Sources */,
 				C76C593928393A3A00587555 /* CodeBasedViewController.swift in Sources */,
@@ -666,9 +700,11 @@
 				C76C592728391CCB00587555 /* AppLaunchTests.swift in Sources */,
 				C76C595D283960E200587555 /* ClosurePropertyViewControllerTests.swift in Sources */,
 				C76C59312839376300587555 /* LoadViewControllersTests.swift in Sources */,
+				C7AD12442865C56F00781660 /* C12NetworkTests.swift in Sources */,
 				C76C59662839651D00587555 /* OutletConnectionsViewControllerTests.swift in Sources */,
 				C76C5971283969CD00587555 /* TestHelpers.swift in Sources */,
 				C76C595528395B5C00587555 /* OverrideViewControllerTests.swift in Sources */,
+				C7AD12422865C48A00781660 /* MockURLSession.swift in Sources */,
 				C76C593B28393B1000587555 /* CodeBasedViewControllerTests.swift in Sources */,
 				C733ACE02863996E004B8608 /* UserDefaultsTests.swift in Sources */,
 				C733ACDE286398E7004B8608 /* FakeUserDefaults.swift in Sources */,
